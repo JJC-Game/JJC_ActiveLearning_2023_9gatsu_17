@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -27,7 +27,7 @@ public class CharaGridRenderer : MonoBehaviour
 
             float yPosition = currentGridPosition.y + diffPosition.y;
 
-            if (yPosition < MIN_Y_POSITION)
+        if (yPosition < MIN_Y_POSITION)
             {
                 yPosition = MIN_Y_POSITION;
             }
@@ -35,6 +35,7 @@ public class CharaGridRenderer : MonoBehaviour
             {
                 yPosition = MAX_Y_POSITION;
             }
+           
 
             gridMenuRectTrans.anchoredPosition = new Vector2(currentGridPosition.x, yPosition);
         }

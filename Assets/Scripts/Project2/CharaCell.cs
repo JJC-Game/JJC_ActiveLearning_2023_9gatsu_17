@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -24,7 +24,7 @@ public class CharaCell : MonoBehaviour
             return;
         }
         nameText.text = UserApplication.fixCharaManager.GetFixCharaData(charaId).name;
-        nameText.color = new Color(0, 0, 255);
+        nameText.color = new Color(0, 0, 1, 1);
         charaImage.sprite = Resources.Load<Sprite>(UserApplication.fixCharaManager.GetFixCharaData(charaId).imagePath);
         notHasCover.enabled = isNotHave;
     }
