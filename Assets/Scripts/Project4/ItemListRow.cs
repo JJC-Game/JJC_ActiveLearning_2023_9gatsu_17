@@ -25,7 +25,7 @@ public class ItemListRow : MonoBehaviour
             return;
         }
         nameText.text = UserApplication.fixItemManager.GetFixItemData(itemId).name;
-        nameText.color = new Color(0, 0, 0);
+        nameText.color = new Color(2, 0, 2);
         itemImage.sprite = Resources.Load<Sprite>(UserApplication.fixItemManager.GetFixItemData(itemId).imagePath);
         itemNum.text = UserApplication.p4_userDataManager.GetHasItemNum(itemId).ToString();
     }
